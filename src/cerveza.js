@@ -1,5 +1,5 @@
 function compararRespuesta1(respuesta1) {
-    if(respuesta1 == "opc3") {
+    if(respuesta1 == "opc4") {
         document.getElementById("Respuesta1").innerHTML = "Correcto";
     } else {
         document.getElementById("Respuesta1").innerHTML = "Incorrecto";
