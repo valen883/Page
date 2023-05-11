@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./src/styles.css" rel="stylesheet" type="text/css">
+  <title> Bienvenido! </title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="welcon"></div>
+  <h1>Bienvenido al juego de la trivia!</h1>
+  <div class="centrar-todo">
+    <div>
+      <div>
+        <p class="primer">Escriba su nombre tu nombre para comenzar el juego!</p>
+        <div class="jugar">
+          <input name="textarea" rows="2" cols="20" id="name" placeholder="Escriba su nombre aqui" class="area" oninput="verificarInput()">
+          <button onclick="enviarName()" class="boton-jugar" id="botonJugar"> Comenzar la aventura!</button>
+        </div>
+      </div>
+    </div>
+    <script>
+      function enviarName() {
+        if (document.getElementById("name").value.trim() !== "") {
+          var texto = document.getElementById("name").value;
+          localStorage.setItem("name", texto);
+          console.log(texto);
+          location.href = "pant2.html"
+        } else {
+          alert("Escriba un nombre porfavor!");
+        }
+      }
+    </script>
+    <script>
+      function verificarInput() {
+        var input = document.getElementById("name");
+        var boton = document.getElementById("botonJugar");
+
+        if (input.value.trim() === "") {
+          boton.disabled = true;
+        } else {
+          boton.disabled = false;
+        }
+      }
+    </script>
+</body>
+
+</html>

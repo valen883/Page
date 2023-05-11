@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+    <link href="./src/styles.css" rel="stylesheet" type="text/css" />
+    <title>Escoje tu Pregunta</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <p>Hola</p>
+    <p id="name"></p>
+    <br />
+    <div>
+      ¿que tipo de pregunta prefieres?
+      <li><button>Cervezas</button></li>
+      <li><button>Comida</button></li>
+    </div>
+
+    <script src="src/index.js"></script>
+    <script>
+      var name = localStorage.getItem("name");
+      document.getElementById("name").innerHTML = name;
+    </script>
+  </body>
+</html>

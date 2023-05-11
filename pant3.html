@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./src/styles.css" rel="stylesheet" type="text/css" />
+    <title>Preguntas Adicionales</title>
+    <meta charset="UTF-8" />
+  </head>
+  <body>
+    <div id="app"></div>
+    <p>Hola de nuevo</p>
+    <p id="name"></p>
+    <h1>Preguntas</h1>
+    <div>
+      ¿Qué año llegó Cristóbal Colón a América?
+      <ol>
+        <li><button id="op1">1475</button></li>
+        <li><button id="op2">1598</button></li>
+        <li><button id="op3">1492</button></li>
+      </ol>
+      <p id="Res1"></p>
+    </div>
+    <div>
+      ¿Dónde se encuentra la famosa Torre Eiffel?
+      <ol>
+        <li><button id="Opt1">Italia</button></li>
+        <li><button id="Opt2">Francia</button></li>
+        <li><button id="Opt3">Portugal</button></li>
+      </ol>
+      <p id="Res2"></p>
+    </div>
+    <script src="src/pant3.js"></script>
+    <script>
+      var name = localStorage.getItem("name");
+      document.getElementById("name").innerHTML = name;
+    </script>
+  </body>
+</html>

@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <link href="./src/styles.css" rel="stylesheet" type="text/css" />
+    <title>Pregunta</title>
+    <meta charset="UTF-8" />
+  </head>
+
+  <body>
+    <div id="app"></div>
+    <p>Hola</p>
+    <p id="name"></p>
+    <h1>Preguntas</h1>
+    <div>
+      ¿Cuál es el lugar más frío de la tierra?
+      <ol>
+        <li>
+          <button id="Opcion1">
+            Amazona
+          </button>
+        </li>
+        <li>
+          <button id="Opcion2">
+            Antártida
+          </button>
+        </li>
+        <li>
+          <button id="Opcion3">
+            Mediterranio
+          </button>
+        </li>
+      </ol>
+    </div>
+    <p id="Respuesta1"></p>
+    <div>
+      ¿Qué tipo de animal es la ballena?
+      <ol>
+        <li>
+          <button id="OpcionA">
+            Mamifero
+          </button>
+        </li>
+        <li><button id="OpcionB">Peces</button></li>
+        <li><button id="OpcionC">Anfibios</button></li>
+      </ol>
+    </div>
+    <p id="Respuesta2"></p>
+    <div>
+      ¿Quién pintó “la última cena”?
+      <ol>
+        <li><button id="Boton1">Vincent van Gogh</button></li>
+        <li>
+          <button id="Boton2">Leonardo da Vinci</button>
+        </li>
+        <li>
+          <button id="Boton3">Pablo Picasso</button>
+        </li>
+      </ol>
+    </div>
+    <p id="Respuesta3"></p>
+    <script src="src/index.js"></script>
+    <script>
+      var name = localStorage.getItem("name");
+      document.getElementById("name").innerHTML = name;
+    </script>
+    <p>¿quieres volver a jugar?</p>
+    <a href="pant3.html"><button id="si" class="botonsi">si</button></a>
+    <a href="index.html"><button id="no" class="botonno">no</button></a>
+    <p id="VolveraJugar"></p>
+    <!--Si se quiere hacer el evento todo en html se tiene que hacer aqui el onclick la funcion de comparar-->
+  </body>
+  <footer>
+    <p class="final">Realizado por grupo 5.3</p>
+  </footer>
+</html>

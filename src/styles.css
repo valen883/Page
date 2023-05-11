@@ -1,0 +1,76 @@
+body {
+  background-color: #c999af;
+}
+h1 {
+  color: #ffe5f0;
+  text-align: center;
+}
+li {
+  font-family: verdana;
+  font-size: 25px;
+}
+
+p {
+  font-family: verdana;
+  font-size: 25px;
+}
+
+a {
+  text-decoration: none;
+}
+button {
+  background-color: #fdcae1;
+  color: black;
+  border: solid;
+  border-radius: 7px;
+  cursor: pointer;
+  padding: 10px;
+  font-size: 14px;
+}
+.botonsi {
+  background-color: aquamarine;
+}
+.botonno {
+  background-color: red;
+}
+.final {
+  font-family: Geneva;
+  font-size: 10px;
+  display: flex;
+  justify-content: center;
+}
+
+.area {
+  display: flex;
+  justify-content: center;
+  color: #000000;
+}
+
+.jugar {
+  display: flex;
+  justify-content: center;
+  margin-top: 50px;
+}
+
+.boton-jugar {
+  color: #ffffff;
+  width: 150px;
+  height: 150px;
+  font-size: large;
+}
+
+div {
+  font-family: verdana;
+  font-size: 24px;
+}
+
+.primer {
+  display: flex;
+  justify-content: center;
+  color: #ffe5f0;
+}
+
+.center-todo {
+  display: flex;
+  justify-content: center;
+}
