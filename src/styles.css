@@ -16,7 +16,7 @@ p {
 }
 
 a {
-  text-decoration: none;
+  text-decoration:none;
 }
 button {
   background-color: #fdcae1;
@@ -26,6 +26,8 @@ button {
   cursor: pointer;
   padding: 10px;
   font-size: 14px;
+  width: 100px;
+  height: 75px;
 }
 .botonsi {
   background-color: aquamarine;
@@ -73,4 +75,8 @@ div {
 .center-todo {
   display: flex;
   justify-content: center;
+}
+
+.centrar-bienvenida {
+  margin-left: 10px;
 }

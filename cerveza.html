@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./src/styles.css" rel="stylesheet" type="text/css">
+  <title>Pregunta</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app"></div>
+  <div class="center-todo">
+    <p class="centrar-bienvenida">Hola</p>
+    <p id="name" class="centrar-bienvenida"></p>
+  </div>
+  <h1>Preguntas</h1>
+  <div>
+    <h3 class="center-todo">¿Cúal de estos envases es mejor para servir una cerveza?</h3>
+  </div>
+  <div>
+    <div class="center-todo">
+      <button id="opc1">copa helada</button>
+      <button id="opc2">jarra</button>
+    </div>
+    <div class="center-todo">
+      <button id="opc3">Vaso de carton</button>
+      <button id="opc4">copa</button>
+    </div>
+  </div>
+  <p id="Respuesta1" class="center-todo"></p>
+  <div>
+    <h3 class="center-todo">¿Con que tipo de cerveza es la mejor para acompañar el pescado?</h3>
+  </div>
+  <div>
+    <div class="center-todo">
+      <button id="op1">Cerveza Rubia</button>
+      <button id="op2">Hidromiel</button>
+    </div>
+    <div class="center-todo">
+      <button id="op3">Cerveza Oscura</button>
+      <button id="op4">Cerveza Rosada</button>
+    </div>
+  </div>
+  <p id="Respuesta2" class="center-todo"></p>
+
+  <div class="center-todo">
+    <button onclick="irEncuestGeneral()">Siguiente</button>
+  </div>
+  <script src="src/cerveza.js"></script>
+  <script>
+    var name = localStorage.getItem("name");
+    document.getElementById("name").innerHTML = name;
+  </script>
+  <script>
+    function irEncuestGeneral() {
+      location.href = "pant2.html"
+    }
+  </script>
+</body>
+
+</html>

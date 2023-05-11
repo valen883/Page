@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+  <link href="./src/styles.css" rel="stylesheet" type="text/css">
+  <title>Pregunta</title>
+  <meta charset="UTF-8" />
+</head>
+
+<body>
+  <div id="app"></div>
+  <div class="center-todo">
+    <p class="centrar-bienvenida">Hola</p>
+    <p id="name" class="centrar-bienvenida"></p>
+  </div>
+  <h1>Preguntas</h1>
+  <div>
+    <h3 class="center-todo">¿Cuál es la carne más cara del mundo?</h3>
+  </div>
+  <div>
+    <div class="center-todo">
+      <button id="opc1">Cerdo</button>
+      <button id="opc2">sushi</button>
+    </div>
+    <div class="center-todo">
+      <button id="opc3">Waghu</button>
+      <button id="opc4">Pollo</button>
+    </div>
+  </div>
+  <p id="Respuesta1" class="center-todo"></p>
+  <div>
+    <h3 class="center-todo">¿Cuál es la fruta más cara del mundo?</h3>
+  </div>
+  <div>
+    <div class="center-todo">
+      <button id="op1">Melon Yubari</button>
+      <button id="op2">Plátanos</button>
+    </div>
+    <div class="center-todo">
+      <button id="op3">Dragon de fruta</button>
+      <button id="op4">Lychee</button>
+    </div>
+  </div>
+  <p id="Respuesta2" class="center-todo"></p>
+
+  <div class="center-todo">
+    <button onclick="irEncuestaGeneral()">Siguiente</button>
+  </div>
+  <script src="src/comida.js"></script>
+  <script>
+    var name = localStorage.getItem("name");
+    document.getElementById("name").innerHTML = name;
+  </script>
+  <script>
+    function irEncuestaGeneral() {
+      location.href = "pant2.html"
+    }
+  </script>
+</body>
+
+</html>

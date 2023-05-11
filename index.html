@@ -15,32 +15,21 @@
       <div>
         <p class="primer">Escriba su nombre tu nombre para comenzar el juego!</p>
         <div class="jugar">
-          <input name="textarea" rows="2" cols="20" id="name" placeholder="Escriba su nombre aqui" class="area" oninput="verificarInput()">
+          <input name="textarea" rows="2" cols="20" id="name" placeholder="Escriba su nombre aqui" class="area">
           <button onclick="enviarName()" class="boton-jugar" id="botonJugar"> Comenzar la aventura!</button>
         </div>
       </div>
     </div>
+    <link href="./src/styles.css" rel="stylesheet" type="text/css">
     <script>
       function enviarName() {
         if (document.getElementById("name").value.trim() !== "") {
           var texto = document.getElementById("name").value;
           localStorage.setItem("name", texto);
           console.log(texto);
-          location.href = "pant2.html"
+          location.href = "pant1.html"
         } else {
           alert("Escriba un nombre porfavor!");
-        }
-      }
-    </script>
-    <script>
-      function verificarInput() {
-        var input = document.getElementById("name");
-        var boton = document.getElementById("botonJugar");
-
-        if (input.value.trim() === "") {
-          boton.disabled = true;
-        } else {
-          boton.disabled = false;
         }
       }
     </script>

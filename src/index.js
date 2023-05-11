@@ -15,6 +15,9 @@ document.getElementById("Opcion2").addEventListener("click", function () {
 document.getElementById("Opcion3").addEventListener("click", function () {
   compararRespuesta1("Opcion3");
 });
+document.getElementById("Opcion4").addEventListener("click", function () {
+  compararRespuesta1("Opcion4");
+});
 function compararRespuesta2(Respuesta2) {
   if (Respuesta2 == "OpcionA") {
     document.getElementById("Respuesta2").innerHTML = "Correcto";
@@ -31,6 +34,9 @@ document.getElementById("OpcionB").addEventListener("click", function () {
 document.getElementById("OpcionC").addEventListener("click", function () {
   compararRespuesta2("OpcionC");
 });
+document.getElementById("OpcionD").addEventListener("click", function () {
+  compararRespuesta2("OpcionD");
+});
 function compararRespuesta3(Respuesta3) {
   if (Respuesta3 == "Boton2") {
     document.getElementById("Respuesta3").innerHTML = "Correcto";
@@ -46,6 +52,9 @@ document.getElementById("Boton2").addEventListener("click", function () {
 });
 document.getElementById("Boton3").addEventListener("click", function () {
   compararRespuesta3("Boton3");
+});
+document.getElementById("Boton4").addEventListener("click", function () {
+  compararRespuesta3("Boton4");
 });
 
 function Game(VolveraJugar) {
