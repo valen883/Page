@@ -1,8 +1,9 @@
 body {
-  background-color: #c999af;
+  background: linear-gradient( #e2afa5, #ad5c74);
+  height: 100%;
 }
 h1 {
-  color: #ffe5f0;
+  color: #68062f;
   text-align: center;
 }
 li {
@@ -19,7 +20,7 @@ a {
   text-decoration:none;
 }
 button {
-  background-color: #fdcae1;
+  background:linear-gradient(#be9791,#916a66 );
   color: black;
   border: solid;
   border-radius: 7px;
@@ -30,10 +31,10 @@ button {
   height: 75px;
 }
 .botonsi {
-  background-color: aquamarine;
+  background:linear-gradient(#dd8b8d ,#dcb295);
 }
 .botonno {
-  background-color: red;
+  background:linear-gradient(#7a0816,#c13707);
 }
 .final {
   font-family: Geneva;
@@ -51,11 +52,11 @@ button {
 .jugar {
   display: flex;
   justify-content: center;
-  margin-top: 50px;
+  margin-top: 100px;
 }
 
 .boton-jugar {
-  color: #ffffff;
+  color: #050000;
   width: 150px;
   height: 150px;
   font-size: large;
@@ -67,9 +68,10 @@ div {
 }
 
 .primer {
+  margin-top: 100px;
   display: flex;
   justify-content: center;
-  color: #ffe5f0;
+  color: #6d022e;
 }
 
 .center-todo {
@@ -80,3 +82,4 @@ div {
 .centrar-bienvenida {
   margin-left: 10px;
 }
+
